@@ -1,13 +1,5 @@
 [
     {
-        "merged": "/home/rahul/IdeaProjects/Ewallet/app/build/intermediates/res/merged/debug/layout-v21/notification_action_tombstone.xml",
-        "source": "/home/rahul/.android/build-cache/6832b29843c274aeb6501af750bfa41498155337/output/res/layout-v21/notification_action_tombstone.xml"
-    },
-    {
-        "merged": "/home/rahul/IdeaProjects/Ewallet/app/build/intermediates/res/merged/debug/layout-v21/notification_template_icon_group.xml",
-        "source": "/home/rahul/.android/build-cache/6832b29843c274aeb6501af750bfa41498155337/output/res/layout-v21/notification_template_icon_group.xml"
-    },
-    {
         "merged": "/home/rahul/Android Projects/Ewallet/app/build/intermediates/res/merged/debug/layout-v21/notification_template_custom_big.xml",
         "source": "/home/rahul/.android/build-cache/6832b29843c274aeb6501af750bfa41498155337/output/res/layout-v21/notification_template_custom_big.xml"
     },
@@ -18,14 +10,6 @@
     {
         "merged": "/home/rahul/Android Projects/Ewallet/app/build/intermediates/res/merged/debug/layout-v21/notification_template_icon_group.xml",
         "source": "/home/rahul/.android/build-cache/6832b29843c274aeb6501af750bfa41498155337/output/res/layout-v21/notification_template_icon_group.xml"
-    },
-    {
-        "merged": "/home/rahul/IdeaProjects/Ewallet/app/build/intermediates/res/merged/debug/layout-v21/notification_template_custom_big.xml",
-        "source": "/home/rahul/.android/build-cache/6832b29843c274aeb6501af750bfa41498155337/output/res/layout-v21/notification_template_custom_big.xml"
-    },
-    {
-        "merged": "/home/rahul/IdeaProjects/Ewallet/app/build/intermediates/res/merged/debug/layout-v21/notification_action.xml",
-        "source": "/home/rahul/.android/build-cache/6832b29843c274aeb6501af750bfa41498155337/output/res/layout-v21/notification_action.xml"
     },
     {
         "merged": "/home/rahul/Android Projects/Ewallet/app/build/intermediates/res/merged/debug/layout-v21/notification_action.xml",

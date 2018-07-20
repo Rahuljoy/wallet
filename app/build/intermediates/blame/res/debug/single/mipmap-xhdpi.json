@@ -4,15 +4,7 @@
         "source": "/home/rahul/Android Projects/Ewallet/app/src/main/res/mipmap-xhdpi/ic_launcher.png"
     },
     {
-        "merged": "/home/rahul/IdeaProjects/Ewallet/app/build/intermediates/res/merged/debug/mipmap-xhdpi/ic_launcher.png",
-        "source": "/home/rahul/IdeaProjects/Ewallet/app/src/main/res/mipmap-xhdpi/ic_launcher.png"
-    },
-    {
         "merged": "/home/rahul/Android Projects/Ewallet/app/build/intermediates/res/merged/debug/mipmap-xhdpi/ic_launcher_round.png",
         "source": "/home/rahul/Android Projects/Ewallet/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png"
-    },
-    {
-        "merged": "/home/rahul/IdeaProjects/Ewallet/app/build/intermediates/res/merged/debug/mipmap-xhdpi/ic_launcher_round.png",
-        "source": "/home/rahul/IdeaProjects/Ewallet/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png"
     }
 ]

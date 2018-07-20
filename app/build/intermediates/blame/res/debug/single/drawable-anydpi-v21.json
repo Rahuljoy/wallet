@@ -4,7 +4,11 @@
         "source": "/home/rahul/Android Projects/Ewallet/app/build/generated/res/pngs/debug/drawable-anydpi-v21/ic_launcher_background.xml"
     },
     {
-        "merged": "/home/rahul/IdeaProjects/Ewallet/app/build/intermediates/res/merged/debug/drawable-anydpi-v21/ic_launcher_background.xml",
-        "source": "/home/rahul/IdeaProjects/Ewallet/app/build/generated/res/pngs/debug/drawable-anydpi-v21/ic_launcher_background.xml"
+        "merged": "/home/rahul/Android Projects/Ewallet/app/build/intermediates/res/merged/debug/drawable-anydpi-v21/design_ic_visibility.xml",
+        "source": "/home/rahul/.android/build-cache/4e4af1a83be16e73eab003a49d6d76507e719044/output/res/drawable-anydpi-v21/design_ic_visibility.xml"
+    },
+    {
+        "merged": "/home/rahul/Android Projects/Ewallet/app/build/intermediates/res/merged/debug/drawable-anydpi-v21/design_ic_visibility_off.xml",
+        "source": "/home/rahul/.android/build-cache/4e4af1a83be16e73eab003a49d6d76507e719044/output/res/drawable-anydpi-v21/design_ic_visibility_off.xml"
     }
 ]

@@ -22,6 +22,19 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name="com.example.rahul.ewallet.LoginActivity" >
+        </activity>
+        <activity android:name="com.example.rahul.ewallet.ForgetPasswordActivity" >
+        </activity>
+        <activity android:name="com.example.rahul.ewallet.homeActivity" >
+        </activity>
+        <activity
+            android:name="com.example.rahul.ewallet.HomeActivity"
+            android:label="@string/title_activity_home"
+            android:theme="@style/AppTheme" >
+        </activity>
+        <activity android:name="com.example.rahul.ewallet.TransectionActivity" >
+        </activity>
 
         <meta-data
             android:name="android.support.VERSION"

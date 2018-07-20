@@ -1,9 +1,5 @@
 [
     {
-        "merged": "/home/rahul/IdeaProjects/Ewallet/app/build/intermediates/res/merged/debug/drawable-v24/ic_launcher_foreground.xml",
-        "source": "/home/rahul/IdeaProjects/Ewallet/app/src/main/res/drawable-v24/ic_launcher_foreground.xml"
-    },
-    {
         "merged": "/home/rahul/Android Projects/Ewallet/app/build/intermediates/res/merged/debug/drawable-v24/ic_launcher_foreground.xml",
         "source": "/home/rahul/Android Projects/Ewallet/app/src/main/res/drawable-v24/ic_launcher_foreground.xml"
     }

@@ -6,13 +6,5 @@
     {
         "merged": "/home/rahul/Android Projects/Ewallet/app/build/intermediates/res/merged/debug/mipmap-anydpi-v26/ic_launcher.xml",
         "source": "/home/rahul/Android Projects/Ewallet/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml"
-    },
-    {
-        "merged": "/home/rahul/IdeaProjects/Ewallet/app/build/intermediates/res/merged/debug/mipmap-anydpi-v26/ic_launcher_round.xml",
-        "source": "/home/rahul/IdeaProjects/Ewallet/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml"
-    },
-    {
-        "merged": "/home/rahul/IdeaProjects/Ewallet/app/build/intermediates/res/merged/debug/mipmap-anydpi-v26/ic_launcher.xml",
-        "source": "/home/rahul/IdeaProjects/Ewallet/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml"
     }
 ]
