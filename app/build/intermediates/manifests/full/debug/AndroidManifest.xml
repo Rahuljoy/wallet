@@ -1,47 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.rahul.ewallet"
+    package="com.example.rahul.wallet"
     android:versionCode="1"
     android:versionName="1.0" >
 
     <uses-sdk
         android:minSdkVersion="15"
-        android:targetSdkVersion="26" />
+        android:targetSdkVersion="27" />
 
     <application
         android:allowBackup="true"
+        android:debuggable="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
+        android:testOnly="true"
         android:theme="@style/AppTheme" >
-        <activity android:name="com.example.rahul.ewallet.MainActivity" >
+        <activity android:name="com.example.rahul.wallet.MainActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.example.rahul.ewallet.LoginActivity" >
-        </activity>
-        <activity android:name="com.example.rahul.ewallet.ForgetPasswordActivity" >
-        </activity>
-        <activity android:name="com.example.rahul.ewallet.homeActivity" >
+        <activity android:name="com.example.rahul.wallet.LoginActivity" >
         </activity>
         <activity
-            android:name="com.example.rahul.ewallet.HomeActivity"
-            android:label="@string/title_activity_home"
+            android:name="com.example.rahul.wallet.UserHomeActivity"
+            android:label="@string/title_activity_user_home"
             android:theme="@style/AppTheme" >
         </activity>
-        <activity android:name="com.example.rahul.ewallet.TransectionActivity" >
+        <activity android:name="com.example.rahul.wallet.HomeActivity" >
         </activity>
-
-        <meta-data
-            android:name="android.support.VERSION"
-            android:value="26.1.0" />
-        <meta-data
-            android:name="android.arch.lifecycle.VERSION"
-            android:value="27.0.0-SNAPSHOT" />
+        <activity android:name="com.example.rahul.wallet.RecoverPasswordActivity" >
+        </activity>
     </application>
 
 </manifest>

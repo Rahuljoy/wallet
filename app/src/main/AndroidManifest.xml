@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          package="com.example.rahul.ewallet">
+          package="com.example.rahul.wallet">
 
     <application
             android:allowBackup="true"
@@ -18,16 +18,14 @@
         </activity>
         <activity android:name=".LoginActivity">
         </activity>
-        <activity android:name=".ForgetPasswordActivity">
-        </activity>
-        <activity android:name=".homeActivity">
-        </activity>
         <activity
-                android:name=".HomeActivity"
-                android:label="@string/title_activity_home"
+                android:name=".UserHomeActivity"
+                android:label="@string/title_activity_user_home"
                 android:theme="@style/AppTheme">
         </activity>
-        <activity android:name=".TransectionActivity">
+        <activity android:name=".HomeActivity">
+        </activity>
+        <activity android:name=".RecoverPasswordActivity">
         </activity>
     </application>
 

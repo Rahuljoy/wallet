@@ -1,51 +1,64 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /home/rahul/Android Projects/Ewallet/app/src/main/AndroidManifest.xml:2:1-34:12
+ADDED from /home/rahul/Android Projects/Ewallet/app/src/main/AndroidManifest.xml:2:1-32:12
+INJECTED from /home/rahul/Android Projects/Ewallet/app/src/main/AndroidManifest.xml:2:1-32:12
+INJECTED from /home/rahul/Android Projects/Ewallet/app/src/main/AndroidManifest.xml:2:1-32:12
+INJECTED from /home/rahul/Android Projects/Ewallet/app/src/main/AndroidManifest.xml:2:1-32:12
+MERGED from [com.android.support:design:27.1.1] /home/rahul/.gradle/caches/transforms-1/files-1.1/design-27.1.1.aar/868e197d6ef8e650213b4a56d59aaac0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:appcompat-v7:27.1.1] /home/rahul/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/a96453e806232a760a922e5ef1109a44/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support.constraint:constraint-layout:1.1.2] /home/rahul/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.2.aar/e3e2b591a3daf30e897ff86a2d661a2c/AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:support-v4:27.1.1] /home/rahul/.gradle/caches/transforms-1/files-1.1/support-v4-27.1.1.aar/d8af732af284375b30de316000d030ef/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-fragment:27.1.1] /home/rahul/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/e86126f9bec489d6d4248ce8f0ad50da/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] /home/rahul/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.1.aar/9344c26ed7a7d33f59fe94e9caae43b8/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:recyclerview-v7:27.1.1] /home/rahul/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-27.1.1.aar/f2d3cfaf40d1560096a0ef176efc0050/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:27.1.1] /home/rahul/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/dcfbe1a5bf6b0161136922e38c83f876/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:27.1.1] /home/rahul/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/29ac0501a3d02a7036c02c929d8bf408/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:27.1.1] /home/rahul/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.1.aar/24edcd79bc6beb1b598171eddd2ef4a9/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-media-compat:27.1.1] /home/rahul/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.1.1.aar/10973a2e03b12cea7f176c681ec1eb2e/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:transition:27.1.1] /home/rahul/.gradle/caches/transforms-1/files-1.1/transition-27.1.1.aar/c314f0cb7d4a257be8a26826f9bc569e/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:27.1.1] /home/rahul/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/21a03bdee0b30d60aa0c93fb7bb52d56/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /home/rahul/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/d0ee78af9a71d223189e1809bd52db01/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /home/rahul/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/a39af2b64c2e7756b5c4e81ec2254a95/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.0] /home/rahul/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/a1cd24c562b72672f2d2e4dcec1425ad/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.0] /home/rahul/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/03a0ea8dc13bfdff679fc0e64cd8208e/AndroidManifest.xml:17:1-22:12
+INJECTED from /home/rahul/Android Projects/Ewallet/app/src/main/AndroidManifest.xml:2:1-32:12
+INJECTED from /home/rahul/Android Projects/Ewallet/app/src/main/AndroidManifest.xml:2:1-32:12
+INJECTED from /home/rahul/Android Projects/Ewallet/app/src/main/AndroidManifest.xml:2:1-32:12
 	package
-		ADDED from /home/rahul/Android Projects/Ewallet/app/src/main/AndroidManifest.xml:3:11-46
+		ADDED from /home/rahul/Android Projects/Ewallet/app/src/main/AndroidManifest.xml:3:11-45
 		INJECTED from /home/rahul/Android Projects/Ewallet/app/src/main/AndroidManifest.xml
 		INJECTED from /home/rahul/Android Projects/Ewallet/app/src/main/AndroidManifest.xml
 	android:versionName
 		INJECTED from /home/rahul/Android Projects/Ewallet/app/src/main/AndroidManifest.xml
+		ADDED from /home/rahul/Android Projects/Ewallet/app/src/main/AndroidManifest.xml:2:1-32:12
+		INJECTED from /home/rahul/Android Projects/Ewallet/app/src/main/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /home/rahul/Android Projects/Ewallet/app/src/main/AndroidManifest.xml
+		ADDED from /home/rahul/Android Projects/Ewallet/app/src/main/AndroidManifest.xml:2:1-32:12
 		INJECTED from /home/rahul/Android Projects/Ewallet/app/src/main/AndroidManifest.xml
 	xmlns:android
 		ADDED from /home/rahul/Android Projects/Ewallet/app/src/main/AndroidManifest.xml:2:11-69
-	android:versionCode
-		INJECTED from /home/rahul/Android Projects/Ewallet/app/src/main/AndroidManifest.xml
-		INJECTED from /home/rahul/Android Projects/Ewallet/app/src/main/AndroidManifest.xml
 application
-ADDED from /home/rahul/Android Projects/Ewallet/app/src/main/AndroidManifest.xml:5:5-32:19
-MERGED from [com.android.support.constraint:constraint-layout:1.1.0] /home/rahul/.android/build-cache/1650b2971d1ce2b2ed7832ba190791c2b82e4ec4/output/AndroidManifest.xml:9:5-20
-MERGED from [com.android.support:design:26.1.0] /home/rahul/.android/build-cache/4e4af1a83be16e73eab003a49d6d76507e719044/output/AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:appcompat-v7:26.1.0] /home/rahul/.android/build-cache/152f5c3a963e5eb89f044e1eeac5746365a9fe6f/output/AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:animated-vector-drawable:26.1.0] /home/rahul/.android/build-cache/f350bbd6d874d1650bd53601bd38d22f5b9fbffc/output/AndroidManifest.xml:22:5-26:19
-MERGED from [com.android.support:support-vector-drawable:26.1.0] /home/rahul/.android/build-cache/a6970d59442091904cbb691b54ea44f69bacc6c6/output/AndroidManifest.xml:22:5-26:19
-MERGED from [com.android.support:transition:26.1.0] /home/rahul/.android/build-cache/6654bb32c434cc0e1ac12041fc83b4b042969d2a/output/AndroidManifest.xml:22:5-26:19
-MERGED from [com.android.support:support-v4:26.1.0] /home/rahul/.android/build-cache/43ff4316b02109951a0674f7fe42627184acb098/output/AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-media-compat:26.1.0] /home/rahul/.android/build-cache/130762a27a50df025e44fc84cba15fb49e2aa431/output/AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-fragment:26.1.0] /home/rahul/.android/build-cache/2bf73c5c4c83412e852b8241943f80f95cfe7624/output/AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-core-utils:26.1.0] /home/rahul/.android/build-cache/61be1825a41c9ae6b42b650fcc9243c34606311b/output/AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:recyclerview-v7:26.1.0] /home/rahul/.android/build-cache/35262cd2573e802111579cd60eedb795c2322261/output/AndroidManifest.xml:22:5-26:19
-MERGED from [com.android.support:support-core-ui:26.1.0] /home/rahul/.android/build-cache/82adc1d78954798598abfdae574cbaf067fd7b78/output/AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-compat:26.1.0] /home/rahul/.android/build-cache/6832b29843c274aeb6501af750bfa41498155337/output/AndroidManifest.xml:25:5-29:19
-MERGED from [android.arch.lifecycle:runtime:1.0.0] /home/rahul/.android/build-cache/7a18c1eaa91a469a6df559fc6c879efe095cb67d/output/AndroidManifest.xml:24:5-28:19
-	android:label
-		ADDED from /home/rahul/Android Projects/Ewallet/app/src/main/AndroidManifest.xml:8:13-45
+ADDED from /home/rahul/Android Projects/Ewallet/app/src/main/AndroidManifest.xml:5:5-30:19
+MERGED from [com.android.support.constraint:constraint-layout:1.1.2] /home/rahul/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.2.aar/e3e2b591a3daf30e897ff86a2d661a2c/AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.2] /home/rahul/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.2.aar/e3e2b591a3daf30e897ff86a2d661a2c/AndroidManifest.xml:9:5-20
 	android:supportsRtl
 		ADDED from /home/rahul/Android Projects/Ewallet/app/src/main/AndroidManifest.xml:10:13-39
+	android:label
+		ADDED from /home/rahul/Android Projects/Ewallet/app/src/main/AndroidManifest.xml:8:13-45
 	android:roundIcon
 		ADDED from /home/rahul/Android Projects/Ewallet/app/src/main/AndroidManifest.xml:9:13-58
-	android:allowBackup
-		ADDED from /home/rahul/Android Projects/Ewallet/app/src/main/AndroidManifest.xml:6:13-39
 	android:icon
 		ADDED from /home/rahul/Android Projects/Ewallet/app/src/main/AndroidManifest.xml:7:13-47
+	android:allowBackup
+		ADDED from /home/rahul/Android Projects/Ewallet/app/src/main/AndroidManifest.xml:6:13-39
 	android:theme
 		ADDED from /home/rahul/Android Projects/Ewallet/app/src/main/AndroidManifest.xml:11:13-44
-activity#com.example.rahul.ewallet.MainActivity
+activity#com.example.rahul.wallet.MainActivity
 ADDED from /home/rahul/Android Projects/Ewallet/app/src/main/AndroidManifest.xml:12:9-18:20
 	android:name
 		ADDED from /home/rahul/Android Projects/Ewallet/app/src/main/AndroidManifest.xml:12:19-47
-intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
 ADDED from /home/rahul/Android Projects/Ewallet/app/src/main/AndroidManifest.xml:13:13-17:29
 action#android.intent.action.MAIN
 ADDED from /home/rahul/Android Projects/Ewallet/app/src/main/AndroidManifest.xml:14:17-68
@@ -55,74 +68,71 @@ category#android.intent.category.LAUNCHER
 ADDED from /home/rahul/Android Projects/Ewallet/app/src/main/AndroidManifest.xml:16:17-76
 	android:name
 		ADDED from /home/rahul/Android Projects/Ewallet/app/src/main/AndroidManifest.xml:16:27-74
-activity#com.example.rahul.ewallet.LoginActivity
+activity#com.example.rahul.wallet.LoginActivity
 ADDED from /home/rahul/Android Projects/Ewallet/app/src/main/AndroidManifest.xml:19:9-20:20
 	android:name
 		ADDED from /home/rahul/Android Projects/Ewallet/app/src/main/AndroidManifest.xml:19:19-48
-activity#com.example.rahul.ewallet.ForgetPasswordActivity
-ADDED from /home/rahul/Android Projects/Ewallet/app/src/main/AndroidManifest.xml:21:9-22:20
-	android:name
-		ADDED from /home/rahul/Android Projects/Ewallet/app/src/main/AndroidManifest.xml:21:19-57
-activity#com.example.rahul.ewallet.homeActivity
-ADDED from /home/rahul/Android Projects/Ewallet/app/src/main/AndroidManifest.xml:23:9-24:20
-	android:name
-		ADDED from /home/rahul/Android Projects/Ewallet/app/src/main/AndroidManifest.xml:23:19-47
-activity#com.example.rahul.ewallet.HomeActivity
-ADDED from /home/rahul/Android Projects/Ewallet/app/src/main/AndroidManifest.xml:25:9-29:20
+activity#com.example.rahul.wallet.UserHomeActivity
+ADDED from /home/rahul/Android Projects/Ewallet/app/src/main/AndroidManifest.xml:21:9-25:20
 	android:label
-		ADDED from /home/rahul/Android Projects/Ewallet/app/src/main/AndroidManifest.xml:27:17-60
+		ADDED from /home/rahul/Android Projects/Ewallet/app/src/main/AndroidManifest.xml:23:17-65
 	android:theme
-		ADDED from /home/rahul/Android Projects/Ewallet/app/src/main/AndroidManifest.xml:28:17-48
+		ADDED from /home/rahul/Android Projects/Ewallet/app/src/main/AndroidManifest.xml:24:17-48
 	android:name
-		ADDED from /home/rahul/Android Projects/Ewallet/app/src/main/AndroidManifest.xml:26:17-45
-activity#com.example.rahul.ewallet.TransectionActivity
-ADDED from /home/rahul/Android Projects/Ewallet/app/src/main/AndroidManifest.xml:30:9-31:20
+		ADDED from /home/rahul/Android Projects/Ewallet/app/src/main/AndroidManifest.xml:22:17-49
+activity#com.example.rahul.wallet.HomeActivity
+ADDED from /home/rahul/Android Projects/Ewallet/app/src/main/AndroidManifest.xml:26:9-27:20
 	android:name
-		ADDED from /home/rahul/Android Projects/Ewallet/app/src/main/AndroidManifest.xml:30:19-54
+		ADDED from /home/rahul/Android Projects/Ewallet/app/src/main/AndroidManifest.xml:26:19-47
+activity#com.example.rahul.wallet.RecoverPasswordActivity
+ADDED from /home/rahul/Android Projects/Ewallet/app/src/main/AndroidManifest.xml:28:9-29:20
+	android:name
+		ADDED from /home/rahul/Android Projects/Ewallet/app/src/main/AndroidManifest.xml:28:19-58
 uses-sdk
 INJECTED from /home/rahul/Android Projects/Ewallet/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
-MERGED from [com.android.support.constraint:constraint-layout:1.1.0] /home/rahul/.android/build-cache/1650b2971d1ce2b2ed7832ba190791c2b82e4ec4/output/AndroidManifest.xml:5:5-7:41
-MERGED from [com.android.support:design:26.1.0] /home/rahul/.android/build-cache/4e4af1a83be16e73eab003a49d6d76507e719044/output/AndroidManifest.xml:21:5-23:62
-MERGED from [com.android.support:appcompat-v7:26.1.0] /home/rahul/.android/build-cache/152f5c3a963e5eb89f044e1eeac5746365a9fe6f/output/AndroidManifest.xml:21:5-23:78
-MERGED from [com.android.support:animated-vector-drawable:26.1.0] /home/rahul/.android/build-cache/f350bbd6d874d1650bd53601bd38d22f5b9fbffc/output/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:26.1.0] /home/rahul/.android/build-cache/a6970d59442091904cbb691b54ea44f69bacc6c6/output/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:transition:26.1.0] /home/rahul/.android/build-cache/6654bb32c434cc0e1ac12041fc83b4b042969d2a/output/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-v4:26.1.0] /home/rahul/.android/build-cache/43ff4316b02109951a0674f7fe42627184acb098/output/AndroidManifest.xml:21:5-23:54
-MERGED from [com.android.support:support-media-compat:26.1.0] /home/rahul/.android/build-cache/130762a27a50df025e44fc84cba15fb49e2aa431/output/AndroidManifest.xml:21:5-23:63
-MERGED from [com.android.support:support-fragment:26.1.0] /home/rahul/.android/build-cache/2bf73c5c4c83412e852b8241943f80f95cfe7624/output/AndroidManifest.xml:21:5-23:60
-MERGED from [com.android.support:support-core-utils:26.1.0] /home/rahul/.android/build-cache/61be1825a41c9ae6b42b650fcc9243c34606311b/output/AndroidManifest.xml:21:5-23:61
-MERGED from [com.android.support:recyclerview-v7:26.1.0] /home/rahul/.android/build-cache/35262cd2573e802111579cd60eedb795c2322261/output/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-ui:26.1.0] /home/rahul/.android/build-cache/82adc1d78954798598abfdae574cbaf067fd7b78/output/AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-compat:26.1.0] /home/rahul/.android/build-cache/6832b29843c274aeb6501af750bfa41498155337/output/AndroidManifest.xml:21:5-23:58
-MERGED from [android.arch.lifecycle:runtime:1.0.0] /home/rahul/.android/build-cache/7a18c1eaa91a469a6df559fc6c879efe095cb67d/output/AndroidManifest.xml:20:5-22:41
-	tools:overrideLibrary
-		ADDED from [com.android.support:design:26.1.0] /home/rahul/.android/build-cache/4e4af1a83be16e73eab003a49d6d76507e719044/output/AndroidManifest.xml:23:9-59
+INJECTED from /home/rahul/Android Projects/Ewallet/app/src/main/AndroidManifest.xml
+INJECTED from /home/rahul/Android Projects/Ewallet/app/src/main/AndroidManifest.xml
+MERGED from [com.android.support:design:27.1.1] /home/rahul/.gradle/caches/transforms-1/files-1.1/design-27.1.1.aar/868e197d6ef8e650213b4a56d59aaac0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:design:27.1.1] /home/rahul/.gradle/caches/transforms-1/files-1.1/design-27.1.1.aar/868e197d6ef8e650213b4a56d59aaac0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:27.1.1] /home/rahul/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/a96453e806232a760a922e5ef1109a44/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:27.1.1] /home/rahul/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/a96453e806232a760a922e5ef1109a44/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support.constraint:constraint-layout:1.1.2] /home/rahul/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.2.aar/e3e2b591a3daf30e897ff86a2d661a2c/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.1.2] /home/rahul/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.2.aar/e3e2b591a3daf30e897ff86a2d661a2c/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:support-v4:27.1.1] /home/rahul/.gradle/caches/transforms-1/files-1.1/support-v4-27.1.1.aar/d8af732af284375b30de316000d030ef/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:27.1.1] /home/rahul/.gradle/caches/transforms-1/files-1.1/support-v4-27.1.1.aar/d8af732af284375b30de316000d030ef/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.1.1] /home/rahul/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/e86126f9bec489d6d4248ce8f0ad50da/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.1.1] /home/rahul/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/e86126f9bec489d6d4248ce8f0ad50da/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] /home/rahul/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.1.aar/9344c26ed7a7d33f59fe94e9caae43b8/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] /home/rahul/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.1.aar/9344c26ed7a7d33f59fe94e9caae43b8/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:27.1.1] /home/rahul/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-27.1.1.aar/f2d3cfaf40d1560096a0ef176efc0050/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:27.1.1] /home/rahul/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-27.1.1.aar/f2d3cfaf40d1560096a0ef176efc0050/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] /home/rahul/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/dcfbe1a5bf6b0161136922e38c83f876/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] /home/rahul/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/dcfbe1a5bf6b0161136922e38c83f876/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] /home/rahul/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/29ac0501a3d02a7036c02c929d8bf408/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] /home/rahul/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/29ac0501a3d02a7036c02c929d8bf408/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.1] /home/rahul/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.1.aar/24edcd79bc6beb1b598171eddd2ef4a9/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.1] /home/rahul/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.1.aar/24edcd79bc6beb1b598171eddd2ef4a9/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:27.1.1] /home/rahul/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.1.1.aar/10973a2e03b12cea7f176c681ec1eb2e/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:27.1.1] /home/rahul/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.1.1.aar/10973a2e03b12cea7f176c681ec1eb2e/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:27.1.1] /home/rahul/.gradle/caches/transforms-1/files-1.1/transition-27.1.1.aar/c314f0cb7d4a257be8a26826f9bc569e/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:27.1.1] /home/rahul/.gradle/caches/transforms-1/files-1.1/transition-27.1.1.aar/c314f0cb7d4a257be8a26826f9bc569e/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] /home/rahul/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/21a03bdee0b30d60aa0c93fb7bb52d56/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] /home/rahul/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/21a03bdee0b30d60aa0c93fb7bb52d56/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /home/rahul/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/d0ee78af9a71d223189e1809bd52db01/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /home/rahul/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/d0ee78af9a71d223189e1809bd52db01/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /home/rahul/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/a39af2b64c2e7756b5c4e81ec2254a95/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /home/rahul/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/a39af2b64c2e7756b5c4e81ec2254a95/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] /home/rahul/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/a1cd24c562b72672f2d2e4dcec1425ad/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] /home/rahul/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/a1cd24c562b72672f2d2e4dcec1425ad/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] /home/rahul/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/03a0ea8dc13bfdff679fc0e64cd8208e/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] /home/rahul/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/03a0ea8dc13bfdff679fc0e64cd8208e/AndroidManifest.xml:20:5-44
+INJECTED from /home/rahul/Android Projects/Ewallet/app/src/main/AndroidManifest.xml
+INJECTED from /home/rahul/Android Projects/Ewallet/app/src/main/AndroidManifest.xml
 	android:targetSdkVersion
 		INJECTED from /home/rahul/Android Projects/Ewallet/app/src/main/AndroidManifest.xml
+		ADDED from /home/rahul/Android Projects/Ewallet/app/src/main/AndroidManifest.xml
 		INJECTED from /home/rahul/Android Projects/Ewallet/app/src/main/AndroidManifest.xml
 	android:minSdkVersion
 		INJECTED from /home/rahul/Android Projects/Ewallet/app/src/main/AndroidManifest.xml
+		ADDED from /home/rahul/Android Projects/Ewallet/app/src/main/AndroidManifest.xml
 		INJECTED from /home/rahul/Android Projects/Ewallet/app/src/main/AndroidManifest.xml
-meta-data#android.support.VERSION
-ADDED from [com.android.support:design:26.1.0] /home/rahul/.android/build-cache/4e4af1a83be16e73eab003a49d6d76507e719044/output/AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:appcompat-v7:26.1.0] /home/rahul/.android/build-cache/152f5c3a963e5eb89f044e1eeac5746365a9fe6f/output/AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:animated-vector-drawable:26.1.0] /home/rahul/.android/build-cache/f350bbd6d874d1650bd53601bd38d22f5b9fbffc/output/AndroidManifest.xml:23:9-25:38
-MERGED from [com.android.support:support-vector-drawable:26.1.0] /home/rahul/.android/build-cache/a6970d59442091904cbb691b54ea44f69bacc6c6/output/AndroidManifest.xml:23:9-25:38
-MERGED from [com.android.support:transition:26.1.0] /home/rahul/.android/build-cache/6654bb32c434cc0e1ac12041fc83b4b042969d2a/output/AndroidManifest.xml:23:9-25:38
-MERGED from [com.android.support:support-v4:26.1.0] /home/rahul/.android/build-cache/43ff4316b02109951a0674f7fe42627184acb098/output/AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-media-compat:26.1.0] /home/rahul/.android/build-cache/130762a27a50df025e44fc84cba15fb49e2aa431/output/AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-fragment:26.1.0] /home/rahul/.android/build-cache/2bf73c5c4c83412e852b8241943f80f95cfe7624/output/AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-core-utils:26.1.0] /home/rahul/.android/build-cache/61be1825a41c9ae6b42b650fcc9243c34606311b/output/AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:recyclerview-v7:26.1.0] /home/rahul/.android/build-cache/35262cd2573e802111579cd60eedb795c2322261/output/AndroidManifest.xml:23:9-25:38
-MERGED from [com.android.support:support-core-ui:26.1.0] /home/rahul/.android/build-cache/82adc1d78954798598abfdae574cbaf067fd7b78/output/AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-compat:26.1.0] /home/rahul/.android/build-cache/6832b29843c274aeb6501af750bfa41498155337/output/AndroidManifest.xml:26:9-28:38
-	android:value
-		ADDED from [com.android.support:design:26.1.0] /home/rahul/.android/build-cache/4e4af1a83be16e73eab003a49d6d76507e719044/output/AndroidManifest.xml:28:13-35
-	android:name
-		ADDED from [com.android.support:design:26.1.0] /home/rahul/.android/build-cache/4e4af1a83be16e73eab003a49d6d76507e719044/output/AndroidManifest.xml:27:13-51
-meta-data#android.arch.lifecycle.VERSION
-ADDED from [android.arch.lifecycle:runtime:1.0.0] /home/rahul/.android/build-cache/7a18c1eaa91a469a6df559fc6c879efe095cb67d/output/AndroidManifest.xml:25:9-27:47
-	android:value
-		ADDED from [android.arch.lifecycle:runtime:1.0.0] /home/rahul/.android/build-cache/7a18c1eaa91a469a6df559fc6c879efe095cb67d/output/AndroidManifest.xml:27:13-44
-	android:name
-		ADDED from [android.arch.lifecycle:runtime:1.0.0] /home/rahul/.android/build-cache/7a18c1eaa91a469a6df559fc6c879efe095cb67d/output/AndroidManifest.xml:26:13-58

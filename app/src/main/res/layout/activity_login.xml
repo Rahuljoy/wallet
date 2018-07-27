@@ -6,15 +6,18 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@color/colorLIGHTCYAN"
-        tools:context="com.example.rahul.ewallet.LoginActivity">
+        tools:context=".LoginActivity">
 
     <ImageView
             android:layout_width="363dp"
             android:layout_height="245dp" app:srcCompat="@drawable/e_wallet_logo"
             android:id="@+id/imageView"
-            tools:ignore="MissingConstraints" android:layout_marginTop="16dp"
-            app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"/>
+            tools:ignore="MissingConstraints"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="8dp" app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="8dp" app:layout_constraintHorizontal_bias="0.523"
+            app:layout_constraintVertical_bias="0.026"/>
     <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -23,9 +26,11 @@
             android:ems="10"
             app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginEnd="8dp" app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginStart="8dp" tools:ignore="MissingConstraints" android:layout_marginTop="24dp"
-            app:layout_constraintTop_toBottomOf="@+id/imageView" app:layout_constraintHorizontal_bias="0.503"
-            android:id="@+id/userNameText"/>
+            android:layout_marginStart="8dp" tools:ignore="MissingConstraints"
+            app:layout_constraintHorizontal_bias="0.594"
+            android:id="@+id/userNameText" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/imageView" app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="8dp" app:layout_constraintVertical_bias="0.077"/>
     <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -34,19 +39,24 @@
             android:ems="10"
             android:id="@+id/passwordText" app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginEnd="8dp" app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginStart="8dp" app:layout_constraintHorizontal_bias="0.503"
+            android:layout_marginStart="8dp" app:layout_constraintHorizontal_bias="0.594"
             tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteY="342dp"/>
+            android:layout_marginTop="8dp" app:layout_constraintTop_toBottomOf="@+id/userNameText"
+            app:layout_constraintBottom_toBottomOf="parent" android:layout_marginBottom="8dp"
+            app:layout_constraintVertical_bias="0.052"/>
     <Button
             android:text="Login"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/loginButton"
             android:textColor="@android:color/black"
-            android:background="@color/colorclosestMaterial" tools:ignore="MissingConstraints" android:textAllCaps="false"
+            android:background="@color/colorClosestMaterial" tools:ignore="MissingConstraints"
+            android:textAllCaps="false"
             app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="8dp"
             app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
-            app:layout_constraintHorizontal_bias="0.9" tools:layout_editor_absoluteY="413dp"/>
+            app:layout_constraintHorizontal_bias="0.896"
+            android:layout_marginTop="24dp"
+            app:layout_constraintTop_toBottomOf="@+id/passwordText"/>
     <Button
             android:text="Forget password ?"
             android:layout_width="222dp"
@@ -57,5 +67,7 @@
             app:layout_constraintStart_toStartOf="parent"
             android:layout_marginStart="8dp" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
             app:layout_constraintHorizontal_bias="0.054" android:textAllCaps="false"
-            tools:layout_editor_absoluteY="480dp" tools:ignore="MissingConstraints"/>
+            tools:ignore="MissingConstraints" android:layout_marginTop="60dp"
+            app:layout_constraintTop_toBottomOf="@+id/loginButton"/>
+
 </android.support.constraint.ConstraintLayout>
