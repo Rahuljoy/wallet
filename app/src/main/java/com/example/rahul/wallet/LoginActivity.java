@@ -72,25 +72,28 @@ public class LoginActivity extends AppCompatActivity {
         return true;
     }
 
-    private void userLogin(String username, String userpassword){
-//try{
+    private void userLogin(final String username, final String userpassword){
+try{
     LoginRequest loginRequest = new LoginRequest();
 
     loginRequest.setUser_name(username);
     loginRequest.setUser_password(userpassword);
 
     LoginService loginService = RetrofitClient.getClient().create(LoginService.class);
-    Call<LoginObject> loginObjectCall = loginService.login(loginRequest);
+    final Call<LoginObject> loginObjectCall = loginService.login(loginRequest);
     loginObjectCall.enqueue(new Callback<LoginObject>() {
         @Override
         public void onResponse(Call<LoginObject> call, Response<LoginObject> response) {
             if (response.isSuccessful()){
                 LoginObject loginObject = response.body();
-//                   if (loginObject.getUser_active().equals("user_active")){
-                startActivity(new Intent(LoginActivity.this,HomeActivity.class));
-//                    } else {
-//                        Toast.makeText(LoginActivity.this,"username or password is incorrect",Toast.LENGTH_SHORT).show();
-//                    }
+                   if (loginObject.getClass().isInstance(loginObject)){
+                       Intent intent = new Intent(LoginActivity.this,HomeActivity.class);
+                       intent.putExtra("username",username);
+                       startActivity(intent);
+                    }
+ else {
+                        Toast.makeText(LoginActivity.this,"username or password is incorrect",Toast.LENGTH_SHORT).show();
+                    }
             } else {
                 Toast.makeText(LoginActivity.this, "Error!Try again",Toast.LENGTH_SHORT).show();
             }
@@ -100,8 +103,8 @@ public class LoginActivity extends AppCompatActivity {
             Toast.makeText(LoginActivity.this,t.getMessage(),Toast.LENGTH_SHORT).show();
         }
     });
-//} catch (Exception io){
-//    Log.d("TAG",io.getMessage());
-//}
+} catch (Exception io){
+    Log.d("TAG",io.getMessage());
+}
    }
 }

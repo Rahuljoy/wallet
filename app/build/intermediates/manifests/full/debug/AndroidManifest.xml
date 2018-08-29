@@ -28,7 +28,10 @@
         </activity>
         <activity android:name="com.example.rahul.wallet.LoginActivity" >
         </activity>
-        <activity android:name="com.example.rahul.wallet.HomeActivity" >
+        <activity
+            android:name="com.example.rahul.wallet.HomeActivity"
+            android:label="@string/title_activity_home"
+            android:theme="@style/AppTheme" >
         </activity>
         <activity android:name="com.example.rahul.wallet.RecoverPasswordActivity" >
         </activity>
