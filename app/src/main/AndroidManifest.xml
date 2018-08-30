@@ -27,6 +27,11 @@
         </activity>
         <activity android:name=".RecoverPasswordActivity">
         </activity>
+        <activity
+                android:name=".UserHomeActivity"
+                android:label="@string/title_activity_user_home"
+                android:theme="@style/AppTheme">
+        </activity>
     </application>
 
 </manifest>

@@ -87,7 +87,7 @@ try{
             if (response.isSuccessful()){
                 LoginObject loginObject = response.body();
                    if (loginObject.getUser_active()!=null){
-                       Intent intent = new Intent(LoginActivity.this,HomeActivity.class);
+                       Intent intent = new Intent(LoginActivity.this,UserHomeActivity.class);
                        intent.putExtra("username",username);
                        startActivity(intent);
                     }
