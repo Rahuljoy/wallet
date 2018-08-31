@@ -32,6 +32,10 @@
                 android:label="@string/title_activity_user_home"
                 android:theme="@style/AppTheme">
         </activity>
+        <activity android:name=".ContentUserHomeActivity">
+        </activity>
+        <activity android:name=".UserHomeAreaActivity">
+        </activity>
     </application>
 
 </manifest>
