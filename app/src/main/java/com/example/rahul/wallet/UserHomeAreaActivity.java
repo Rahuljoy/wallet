@@ -27,11 +27,11 @@ public class UserHomeAreaActivity extends AppCompatActivity implements CompoundB
             viewUsername.setText(username);
 
         }
+
         logOut = (Switch) findViewById(R.id.logOut);
 
         logOut.setOnCheckedChangeListener(this);
     }
-
 
     @Override
     public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {

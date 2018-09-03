@@ -32,7 +32,7 @@
             android:layout_marginStart="8dp" android:layout_marginEnd="8dp" android:layout_marginRight="8dp"
             app:layout_constraintEnd_toEndOf="parent" app:layout_constraintBottom_toBottomOf="parent"
             android:layout_marginBottom="8dp" app:layout_constraintHorizontal_bias="0.571"
-            app:layout_constraintVertical_bias="0.204"/>
+            app:layout_constraintVertical_bias="0.619"/>
     <ImageView
             android:layout_width="79dp"
             android:layout_height="77dp" app:srcCompat="@drawable/ic_menu_camera"
@@ -100,9 +100,9 @@
             android:layout_height="37dp"
             android:id="@+id/button6" app:layout_constraintStart_toEndOf="@+id/button5" android:layout_marginLeft="48dp"
             android:layout_marginStart="48dp" app:layout_constraintTop_toTopOf="@+id/view4"
-            android:layout_marginTop="44dp" app:layout_constraintEnd_toEndOf="@+id/view4" android:layout_marginEnd="8dp"
-            android:layout_marginRight="8dp" app:layout_constraintHorizontal_bias="0.285"
-            android:background="#64FFDA"/>
+            android:layout_marginTop="44dp"
+            android:background="#64FFDA" app:layout_constraintEnd_toEndOf="@+id/view4" android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp" app:layout_constraintHorizontal_bias="0.17"/>
     <Button
             android:text="Add Card"
             android:layout_width="99dp"
@@ -121,15 +121,17 @@
             android:layout_marginTop="60dp"
             app:layout_constraintTop_toBottomOf="@+id/button6" app:layout_constraintStart_toEndOf="@+id/button8"
             android:layout_marginLeft="60dp" android:layout_marginStart="60dp"
-            android:background="#64FFDA"/>
+            android:background="#64FFDA" app:layout_constraintEnd_toEndOf="@+id/view4" android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp" app:layout_constraintHorizontal_bias="0.0"/>
     <Switch
             android:text="@string/logout"
             android:layout_width="114dp"
             android:layout_height="28dp"
-            android:id="@+id/logOut" app:layout_constraintEnd_toEndOf="@+id/view" android:layout_marginEnd="4dp"
-            android:layout_marginRight="4dp" android:textAllCaps="false"
+            android:id="@+id/logOut"
+            android:textAllCaps="false"
             android:textColor="#D50000" android:textSize="17sp" android:textStyle="bold"
             tools:ignore="MissingConstraints" app:layout_constraintBottom_toBottomOf="@+id/view"
-            android:layout_marginBottom="120dp"/>
+            android:layout_marginBottom="120dp" app:layout_constraintEnd_toEndOf="@+id/view"
+            android:layout_marginEnd="12dp" android:layout_marginRight="12dp"/>
 
 </android.support.constraint.ConstraintLayout>

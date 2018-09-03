@@ -86,13 +86,16 @@ try{
         public void onResponse(Call<LoginObject> call, Response<LoginObject> response) {
             if (response.isSuccessful()){
                 LoginObject loginObject = response.body();
-                   if (loginObject.getUser_active()!=null){
-                       Intent intent = new Intent(LoginActivity.this,UserHomeAreaActivity.class);
-                       intent.putExtra("username",username);
-                       startActivity(intent);
-                       Toast.makeText(LoginActivity.this,"Login Successfully",Toast.LENGTH_SHORT).show();
-                    }
- else {
+                   if (loginObject.getUser_id()!=null){
+                       if (loginObject.getUser_active()!=null){
+                           Intent intent = new Intent(LoginActivity.this,UserHomeAreaActivity.class);
+                           intent.putExtra("username",username);
+                           startActivity(intent);
+                           Toast.makeText(LoginActivity.this,"Login Successfully",Toast.LENGTH_SHORT).show();
+                       } else {
+                           Toast.makeText(LoginActivity.this,"user Not active",Toast.LENGTH_SHORT).show();
+                       }
+                    } else {
                         Toast.makeText(LoginActivity.this,"username or password is incorrect",Toast.LENGTH_SHORT).show();
                     }
             } else {
