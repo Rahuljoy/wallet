@@ -36,6 +36,8 @@
         </activity>
         <activity android:name=".UserHomeAreaActivity">
         </activity>
+        <activity android:name=".ForgetPasswordEmailActivity">
+        </activity>
     </application>
 
 </manifest>

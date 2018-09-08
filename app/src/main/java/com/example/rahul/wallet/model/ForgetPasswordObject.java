@@ -13,4 +13,7 @@ public class ForgetPasswordObject {
         return e_mail;
     }
 
+//    public void setE_mail(String e_mail) {
+//        this.e_mail = e_mail;
+//    }
 }

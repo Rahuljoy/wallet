@@ -44,6 +44,8 @@
         </activity>
         <activity android:name="com.example.rahul.wallet.UserHomeAreaActivity" >
         </activity>
+        <activity android:name="com.example.rahul.wallet.ForgetPasswordEmailActivity" >
+        </activity>
     </application>
 
 </manifest>
