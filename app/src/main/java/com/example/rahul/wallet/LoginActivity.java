@@ -88,7 +88,7 @@ try{
                    if (loginObject.getUser_id()!=null){
                        if (loginObject.getUser_active()!=null){
                            Intent intent = new Intent(LoginActivity.this,UserHomeAreaActivity.class);
-                           intent.putExtra("username",username);
+                           intent.putExtra("user_id",loginObject.getUser_id());
                            startActivity(intent);
                            Toast.makeText(LoginActivity.this,"Login Successfully",Toast.LENGTH_SHORT).show();
                        } else {

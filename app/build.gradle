@@ -35,4 +35,5 @@ dependencies {
     compile files('libs/additionnal.jar')
     compile files('libs/mail.jar')
 
+    implementation 'com.android.support:cardview-v7:27.1.1'
 }
