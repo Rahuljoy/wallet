@@ -70,10 +70,10 @@ public class RecoverPasswordActivity extends AppCompatActivity {
             forgetPasswordObjectCall.enqueue(new Callback<ForgetPasswordObject>() {
                 @Override
                 public void onResponse(Call<ForgetPasswordObject> call, Response<ForgetPasswordObject> response) {
-                    ForgetPasswordObject forgetPasswordObject = response.body();
                     if (response.isSuccessful()){
-                     if (forgetPasswordObject.getE_mail() !=null){
-                         Intent intent = new Intent(RecoverPasswordActivity.this,ForgetPasswordEmailActivity.class);
+                        ForgetPasswordObject forgetPasswordObject = response.body();
+                        if (forgetPasswordObject.getE_mail() !=null){
+                            Intent intent = new Intent(RecoverPasswordActivity.this,ForgetPasswordEmailActivity.class);
                          intent.putExtra("e_mail",forgetPasswordObject.getE_mail());
                          startActivity(intent);
                          Toast.makeText(RecoverPasswordActivity.this, "password Submit!Please..Confirmation your e_mail to submit successfully",Toast.LENGTH_SHORT).show();

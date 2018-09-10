@@ -59,10 +59,10 @@
             app:layout_constraintBottom_toBottomOf="@+id/view" android:layout_marginBottom="8dp"
             app:layout_constraintVertical_bias="0.698"/>
     <TextView
-            android:text="TextView"
+            android:text="AccountNo"
             android:layout_width="148dp"
             android:layout_height="28dp"
-            android:id="@+id/textView14" app:layout_constraintStart_toEndOf="@+id/textView13"
+            android:id="@+id/viewAccountNo" app:layout_constraintStart_toEndOf="@+id/textView13"
             android:layout_marginLeft="8dp" android:layout_marginStart="8dp" android:layout_marginTop="8dp"
             app:layout_constraintTop_toBottomOf="@+id/viewUsername" app:layout_constraintBottom_toBottomOf="@+id/view"
             android:layout_marginBottom="8dp" app:layout_constraintEnd_toEndOf="@+id/view"
@@ -77,10 +77,10 @@
             android:layout_marginBottom="8dp" app:layout_constraintVertical_bias="0.642"
             tools:ignore="MissingConstraints"/>
     <TextView
-            android:text="TextView"
+            android:text="AccountBalance"
             android:layout_width="198dp"
             android:layout_height="28dp"
-            android:id="@+id/textView17" android:layout_marginTop="8dp"
+            android:id="@+id/viewAccountBalance" android:layout_marginTop="8dp"
             app:layout_constraintTop_toTopOf="@+id/view3" app:layout_constraintStart_toEndOf="@+id/textView16"
             android:layout_marginLeft="8dp" android:layout_marginStart="8dp"
             app:layout_constraintBottom_toBottomOf="@+id/view3" android:layout_marginBottom="8dp"

@@ -3,31 +3,46 @@ package com.example.rahul.wallet;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.*;
+import com.example.rahul.wallet.interfaces.DashboardService;
+import com.example.rahul.wallet.model.DashboardObject;
+import com.example.rahul.wallet.model.DashboardRequest;
+import com.example.rahul.wallet.remote.RetrofitClient;
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
 
 public class UserHomeAreaActivity extends AppCompatActivity implements CompoundButton.OnCheckedChangeListener {
 
     TextView viewUsername;
+    TextView viewAccountNo;
+    TextView viewAccountBalance;
     Switch logOut;
     Button transactionButton;
     Button StatementButton;
     Button cardButton;
     Button settingButton;
-
+//private String user_id=null;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_user_home_area);
 
+        viewUsername = (TextView) findViewById(R.id.viewUsername);
+        viewAccountNo = (TextView) findViewById(R.id.viewAccountNo);
+        viewAccountBalance = (TextView) findViewById(R.id.viewAccountBalance);
+
         Bundle extras =getIntent().getExtras();
         String user_id;
         if (extras != null){
             user_id=extras.getString("user_id");
+//            viewUsername.setText(user_id);
+            viewAccountNo.setText(user_id);
+            viewAccountBalance.setText(user_id);
             dashboardInformation(user_id);
         }
-        viewUsername = (TextView) findViewById(R.id.viewUsername);
-//        viewUsername.setText(user_id);
 
         logOut = (Switch) findViewById(R.id.logOut);
         logOut.setOnCheckedChangeListener(this);
@@ -66,6 +81,41 @@ public class UserHomeAreaActivity extends AppCompatActivity implements CompoundB
                 Toast.makeText(UserHomeAreaActivity.this, "setting",Toast.LENGTH_SHORT).show();
             }
         });
+    }
+
+    private void dashboardInformation(final String user_id) {
+        try{
+            DashboardRequest dashboardRequest = new DashboardRequest();
+            dashboardRequest.setUser_id(user_id);
+
+            DashboardService dashboardService = RetrofitClient.getClient().create(DashboardService.class);
+            final Call<DashboardObject> dashboardObjectCall = dashboardService.userInformation(user_id.trim());
+            dashboardObjectCall.enqueue(new Callback<DashboardObject>() {
+                @Override
+                public void onResponse(Call<DashboardObject> call, Response<DashboardObject> response) {
+                    if (response.isSuccessful()){
+                        DashboardObject dashboardObject = response.body();
+//                         dashboardObject.getUser_name()=response.body();
+//                        if (dashboardObject.getUser_name().equals("user_name")){
+//                        dashboardObject.getUser_name();
+                            viewUsername.setText(dashboardObject.getUser_name());
+//                        }else {
+//                            Toast.makeText(UserHomeAreaActivity.this,"failed!Try Again",Toast.LENGTH_SHORT).show();
+//                        }
+                    }else {
+                        Toast.makeText(UserHomeAreaActivity.this,"Error!Try Again",Toast.LENGTH_SHORT).show();
+                    }
+                }
+
+                @Override
+                public void onFailure(Call<DashboardObject> call, Throwable t) {
+                    Toast.makeText(UserHomeAreaActivity.this,t.getMessage(),Toast.LENGTH_SHORT).show();
+                }
+            });
+
+        }catch (Exception io){
+            Log.d("TAG",io.getMessage());
+        }
     }
 
     @Override
