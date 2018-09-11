@@ -24,7 +24,7 @@ public class UserHomeAreaActivity extends AppCompatActivity implements CompoundB
     Button StatementButton;
     Button cardButton;
     Button settingButton;
-//private String user_id=null;
+//private String user_id;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -36,11 +36,12 @@ public class UserHomeAreaActivity extends AppCompatActivity implements CompoundB
 
         Bundle extras =getIntent().getExtras();
         if (extras != null){
-        String user_id = extras.getString("user_id");
-//            viewUsername.setText(user_id);
-//            viewAccountNo.setText(user_id);
-//            viewAccountBalance.setText(user_id);
+            String user_id = extras.getString("user_id");
+            
             dashboardInformation(user_id);
+//            viewUsername.setText(user_id);
+            viewAccountNo.setText(user_id);
+            viewAccountBalance.setText(user_id);
         }
 
         logOut = (Switch) findViewById(R.id.logOut);
