@@ -35,12 +35,11 @@ public class UserHomeAreaActivity extends AppCompatActivity implements CompoundB
         viewAccountBalance = (TextView) findViewById(R.id.viewAccountBalance);
 
         Bundle extras =getIntent().getExtras();
-        String user_id;
         if (extras != null){
-            user_id=extras.getString("user_id");
+        String user_id = extras.getString("user_id");
 //            viewUsername.setText(user_id);
-            viewAccountNo.setText(user_id);
-            viewAccountBalance.setText(user_id);
+//            viewAccountNo.setText(user_id);
+//            viewAccountBalance.setText(user_id);
             dashboardInformation(user_id);
         }
 
@@ -89,19 +88,13 @@ public class UserHomeAreaActivity extends AppCompatActivity implements CompoundB
             dashboardRequest.setUser_id(user_id);
 
             DashboardService dashboardService = RetrofitClient.getClient().create(DashboardService.class);
-            final Call<DashboardObject> dashboardObjectCall = dashboardService.userInformation(user_id.trim());
+            final Call<DashboardObject> dashboardObjectCall = dashboardService.userInformation(user_id);
             dashboardObjectCall.enqueue(new Callback<DashboardObject>() {
                 @Override
                 public void onResponse(Call<DashboardObject> call, Response<DashboardObject> response) {
                     if (response.isSuccessful()){
                         DashboardObject dashboardObject = response.body();
-//                         dashboardObject.getUser_name()=response.body();
-//                        if (dashboardObject.getUser_name().equals("user_name")){
-//                        dashboardObject.getUser_name();
-                            viewUsername.setText(dashboardObject.getUser_name());
-//                        }else {
-//                            Toast.makeText(UserHomeAreaActivity.this,"failed!Try Again",Toast.LENGTH_SHORT).show();
-//                        }
+                        viewUsername.setText(dashboardObject.getUser_name());
                     }else {
                         Toast.makeText(UserHomeAreaActivity.this,"Error!Try Again",Toast.LENGTH_SHORT).show();
                     }
