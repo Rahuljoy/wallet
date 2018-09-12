@@ -6,7 +6,6 @@ import retrofit2.http.GET;
 import retrofit2.http.Path;
 
 public interface DashboardService {
-//    @Headers("Content-Type: application/json")
 @GET ("dashboard/user-api.php?user_id={user_id}")
 Call<DashboardObject>userInformation(@Path("user_id") String user_id);
 }

@@ -24,7 +24,10 @@ public class UserHomeAreaActivity extends AppCompatActivity implements CompoundB
     Button StatementButton;
     Button cardButton;
     Button settingButton;
+
+
 //private String user_id;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -36,8 +39,8 @@ public class UserHomeAreaActivity extends AppCompatActivity implements CompoundB
 
         Bundle extras =getIntent().getExtras();
         if (extras != null){
-            String user_id = extras.getString("user_id");
-            
+           String user_id = extras.getString("user_id");
+//System.out.println(user_id);
             dashboardInformation(user_id);
 //            viewUsername.setText(user_id);
             viewAccountNo.setText(user_id);
@@ -87,7 +90,7 @@ public class UserHomeAreaActivity extends AppCompatActivity implements CompoundB
         try{
             DashboardRequest dashboardRequest = new DashboardRequest();
             dashboardRequest.setUser_id(user_id);
-
+//            System.out.println(user_id);
             DashboardService dashboardService = RetrofitClient.getClient().create(DashboardService.class);
             final Call<DashboardObject> dashboardObjectCall = dashboardService.userInformation(user_id);
             dashboardObjectCall.enqueue(new Callback<DashboardObject>() {
@@ -96,7 +99,8 @@ public class UserHomeAreaActivity extends AppCompatActivity implements CompoundB
                     if (response.isSuccessful()){
                         DashboardObject dashboardObject = response.body();
                         viewUsername.setText(dashboardObject.getUser_name());
-                    }else {
+                    }
+                    else {
                         Toast.makeText(UserHomeAreaActivity.this,"Error!Try Again",Toast.LENGTH_SHORT).show();
                     }
                 }
@@ -106,7 +110,6 @@ public class UserHomeAreaActivity extends AppCompatActivity implements CompoundB
                     Toast.makeText(UserHomeAreaActivity.this,t.getMessage(),Toast.LENGTH_SHORT).show();
                 }
             });
-
         }catch (Exception io){
             Log.d("TAG",io.getMessage());
         }
