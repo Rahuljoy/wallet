@@ -14,6 +14,10 @@ public class DashboardObject {
     @Expose
     private String user_active;
 
+    @SerializedName("user_account_no")
+    @Expose
+    private String user_account_no;
+
     @SerializedName("contace_no")
     @Expose
     private String contace_no;
@@ -30,7 +34,9 @@ public class DashboardObject {
     @Expose
     private String picture_path;
 
-
+    @SerializedName("balance")
+    @Expose
+    private String balance;
 
     public String getUser_name() {
         return user_name;
@@ -38,6 +44,10 @@ public class DashboardObject {
 
     public String getUser_active() {
         return user_active;
+    }
+
+    public String getUser_account_no() {
+        return user_account_no;
     }
 
     public String getContace_no() {
@@ -54,5 +64,9 @@ public class DashboardObject {
 
     public String getPicture_path() {
         return picture_path;
+    }
+
+    public String getBalance() {
+        return balance;
     }
 }

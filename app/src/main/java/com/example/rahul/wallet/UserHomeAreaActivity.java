@@ -19,14 +19,12 @@ public class UserHomeAreaActivity extends AppCompatActivity implements CompoundB
     TextView viewUsername;
     TextView viewAccountNo;
     TextView viewAccountBalance;
+    ImageView viewProfilImage;
     Switch logOut;
     Button transactionButton;
     Button StatementButton;
     Button cardButton;
     Button settingButton;
-
-
-//private String user_id;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,15 +34,13 @@ public class UserHomeAreaActivity extends AppCompatActivity implements CompoundB
         viewUsername = (TextView) findViewById(R.id.viewUsername);
         viewAccountNo = (TextView) findViewById(R.id.viewAccountNo);
         viewAccountBalance = (TextView) findViewById(R.id.viewAccountBalance);
+        viewProfilImage = (ImageView) findViewById(R.id.viewProfileImage);
 
         Bundle extras =getIntent().getExtras();
         if (extras != null){
            String user_id = extras.getString("user_id");
-//System.out.println(user_id);
+
             dashboardInformation(user_id);
-//            viewUsername.setText(user_id);
-            viewAccountNo.setText(user_id);
-            viewAccountBalance.setText(user_id);
         }
 
         logOut = (Switch) findViewById(R.id.logOut);
@@ -99,6 +95,10 @@ public class UserHomeAreaActivity extends AppCompatActivity implements CompoundB
                     if (response.isSuccessful()){
                         DashboardObject dashboardObject = response.body();
                         viewUsername.setText(dashboardObject.getUser_name());
+                        viewAccountNo.setText(dashboardObject.getUser_account_no());
+                        viewAccountBalance.setText(dashboardObject.getBalance());
+//                        viewProfilImage.
+
                     }
                     else {
                         Toast.makeText(UserHomeAreaActivity.this,"Error!Try Again",Toast.LENGTH_SHORT).show();
