@@ -10,6 +10,8 @@ import com.example.rahul.wallet.interfaces.DashboardService;
 import com.example.rahul.wallet.model.DashboardObject;
 import com.example.rahul.wallet.model.DashboardRequest;
 import com.example.rahul.wallet.remote.RetrofitClient;
+import com.nostra13.universalimageloader.core.ImageLoader;
+import com.nostra13.universalimageloader.core.ImageLoaderConfiguration;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
@@ -68,6 +70,7 @@ public class UserHomeAreaActivity extends AppCompatActivity implements CompoundB
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(UserHomeAreaActivity.this,ViewCardActivity.class);
+                intent.putExtra("used_id",DashboardRequest.class);
                 startActivity(intent);
                 Toast.makeText(UserHomeAreaActivity.this, "card",Toast.LENGTH_SHORT).show();
             }
@@ -94,11 +97,20 @@ public class UserHomeAreaActivity extends AppCompatActivity implements CompoundB
                 public void onResponse(Call<DashboardObject> call, Response<DashboardObject> response) {
                     if (response.isSuccessful()){
                         DashboardObject dashboardObject = response.body();
+                        if (dashboardObject.getImage()!=null){
+                            ImageLoaderConfiguration imageLoaderConfiguration = new ImageLoaderConfiguration.Builder(UserHomeAreaActivity.this).build();
+
+                            ImageLoader.getInstance().init(imageLoaderConfiguration);
+                            ImageLoader imageLoader=ImageLoader.getInstance();
+
+                            String url = "https://app-1524252070.000webhostapp.com"+"/"+dashboardObject.getPicture_path();
+                            imageLoader.displayImage(url,viewProfilImage);
+                        }else{
+                            Toast.makeText(UserHomeAreaActivity.this,"Error!Something Wrong",Toast.LENGTH_SHORT).show();
+                        }
                         viewUsername.setText(dashboardObject.getUser_name());
                         viewAccountNo.setText(dashboardObject.getUser_account_no());
                         viewAccountBalance.setText(dashboardObject.getBalance());
-//                        viewProfilImage.
-
                     }
                     else {
                         Toast.makeText(UserHomeAreaActivity.this,"Error!Try Again",Toast.LENGTH_SHORT).show();

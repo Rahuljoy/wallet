@@ -40,7 +40,8 @@
             app:layout_constraintTop_toTopOf="@+id/view"
             app:layout_constraintStart_toStartOf="@+id/view" android:layout_marginLeft="8dp"
             android:layout_marginStart="8dp" android:layout_marginBottom="8dp"
-            app:layout_constraintBottom_toTopOf="@+id/view3" app:layout_constraintVertical_bias="0.202"/>
+            app:layout_constraintBottom_toTopOf="@+id/view3" app:layout_constraintVertical_bias="0.202"
+            android:background="@android:color/darker_gray"/>
     <TextView
             android:layout_width="156dp"
             android:layout_height="28dp"
