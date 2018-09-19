@@ -5,6 +5,69 @@
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="@color/colorLIGHTCYAN"
         tools:context=".ViewCardActivity">
 
+    <View
+            android:layout_width="371dp"
+            android:layout_height="548dp"
+            android:id="@+id/view5" app:layout_constraintTop_toTopOf="parent" android:layout_marginTop="8dp"
+            app:layout_constraintBottom_toBottomOf="parent" android:layout_marginBottom="8dp"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp" android:layout_marginEnd="8dp" android:layout_marginRight="8dp"
+            app:layout_constraintEnd_toEndOf="parent"/>
+    <android.support.v7.widget.CardView
+            android:layout_width="363dp"
+            android:layout_height="163dp"
+            app:layout_constraintBottom_toBottomOf="@+id/view5"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp" android:layout_marginRight="8dp"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp" app:layout_constraintHorizontal_bias="0.6"
+            app:cardBackgroundColor="#A3E4D7"
+            app:layout_constraintTop_toTopOf="@+id/view5" android:layout_marginTop="8dp"
+            app:layout_constraintVertical_bias="0.327" android:id="@+id/cardView">
+        <ImageView
+                android:layout_width="80dp"
+                android:layout_height="87dp"
+                android:layout_gravity="left|center"
+                android:id="@+id/imageView2" app:srcCompat="@drawable/ic_action_name"/>
+        <TextView
+                android:text="User Name"
+                android:layout_width="239dp"
+                android:layout_height="38dp" android:id="@+id/textView4"
+                android:layout_gravity="right"/>
+        <TextView
+                android:text="A/C Balance"
+                android:layout_width="239dp"
+                android:layout_height="38dp" android:id="@+id/textView3"
+                android:layout_gravity="right|center"/>
+        <TextView
+                android:text="Expair Date"
+                android:layout_width="239dp"
+                android:layout_height="38dp" android:id="@+id/textView5"
+                android:layout_gravity="bottom|right"/>
+    </android.support.v7.widget.CardView>
+    <TextView
+            android:text="Bank Card"
+            android:layout_width="291dp"
+            android:layout_height="25dp"
+            android:id="@+id/textView6" android:textColor="#196F3D"
+            android:textStyle="bold|italic" android:textSize="18sp"
+            android:layout_marginTop="36dp" app:layout_constraintTop_toTopOf="@+id/view5"
+            android:layout_marginBottom="8dp" app:layout_constraintBottom_toTopOf="@+id/cardView"
+            app:layout_constraintVertical_bias="0.0" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="8dp" android:layout_marginRight="8dp"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp" app:layout_constraintHorizontal_bias="0.233"/>
+    <ImageButton
+            android:layout_width="56dp"
+            android:layout_height="52dp" app:srcCompat="@android:drawable/ic_input_add"
+            android:id="@+id/addCardButton" android:layout_marginBottom="28dp"
+            app:layout_constraintBottom_toBottomOf="@+id/view5"
+            app:layout_constraintTop_toTopOf="@+id/view5" android:layout_marginTop="8dp"
+            app:layout_constraintVertical_bias="0.95" android:background="#0E6655"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp" android:layout_marginRight="8dp"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp" app:layout_constraintHorizontal_bias="0.894"/>
 </android.support.constraint.ConstraintLayout>

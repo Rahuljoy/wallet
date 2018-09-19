@@ -1,6 +1,7 @@
 package com.example.rahul.wallet;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -30,22 +31,24 @@ public class LoginActivity extends AppCompatActivity {
 
         userNameText = (EditText) findViewById(R.id.userNameText);
         passwordText = (EditText) findViewById(R.id.passwordText);
+
         loginButton = (Button) findViewById(R.id.loginButton);
 
-
         loginButton.setOnClickListener(new View.OnClickListener() {
+
             @Override
             public void onClick(View v) {
+
                 String username = userNameText.getText().toString();
                 String userpassword = passwordText.getText().toString();
-                //validetion
-                if (validateLogin(username,userpassword)){
+                    //validetion
+                if (validateLogin(username, userpassword)) {
                     //do login
-                    userLogin(username,userpassword);
-
+                    userLogin(username, userpassword);
                 }
             }
         });
+
 
         forgetPasswordButton = (Button) findViewById(R.id.forgetPasswordButton);
 
@@ -57,6 +60,7 @@ public class LoginActivity extends AppCompatActivity {
         });
 
     }
+
 
     private boolean validateLogin(String username ,String userpassword){
         if (username == null || username.trim().length() == 0 ){
@@ -81,12 +85,26 @@ try{
     LoginService loginService = RetrofitClient.getClient().create(LoginService.class);
     final Call<LoginObject> loginObjectCall = loginService.login(loginRequest);
     loginObjectCall.enqueue(new Callback<LoginObject>() {
+
         @Override
         public void onResponse(Call<LoginObject> call, Response<LoginObject> response) {
+
             if (response.isSuccessful()){
                 LoginObject loginObject = response.body();
                    if (loginObject.getUser_id()!=null){
                        if (loginObject.getUser_active()!=null){
+//
+//                           Boolean isFirstRun = getSharedPreferences("PREFERENCE", MODE_PRIVATE)
+//                                   .getBoolean("isFirstRun", true);
+//                           if (isFirstRun){
+//                               Intent intent = new Intent(LoginActivity.this,AddCardActivity.class);
+////                               intent.putExtra("user_id",loginObject.getUser_id());
+//                               startActivity(intent);
+//
+//                               getSharedPreferences("PREFERENCE", MODE_PRIVATE).edit()
+//                                       .putBoolean("isFirstRun", false).apply();
+//                           }
+
                            Intent intent = new Intent(LoginActivity.this,UserHomeAreaActivity.class);
                            intent.putExtra("user_id",loginObject.getUser_id());
                            startActivity(intent);
@@ -100,6 +118,7 @@ try{
             } else {
                 Toast.makeText(LoginActivity.this, "Error!Try again",Toast.LENGTH_SHORT).show();
             }
+
         }
         @Override
         public void onFailure(Call<LoginObject> call, Throwable t) {

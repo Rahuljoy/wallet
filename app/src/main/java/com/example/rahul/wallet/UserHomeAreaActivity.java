@@ -70,7 +70,7 @@ public class UserHomeAreaActivity extends AppCompatActivity implements CompoundB
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(UserHomeAreaActivity.this,ViewCardActivity.class);
-                intent.putExtra("used_id",DashboardRequest.class);
+//                intent.putExtra("used_id",DashboardRequest.class);
                 startActivity(intent);
                 Toast.makeText(UserHomeAreaActivity.this, "card",Toast.LENGTH_SHORT).show();
             }
