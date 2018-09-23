@@ -39,8 +39,9 @@ public class UserHomeAreaActivity extends AppCompatActivity implements CompoundB
         viewProfilImage = (ImageView) findViewById(R.id.viewProfileImage);
 
         Bundle extras =getIntent().getExtras();
+        String user_id;
         if (extras != null){
-           String user_id = extras.getString("user_id");
+            user_id = extras.getString("user_id");
 
             dashboardInformation(user_id);
         }
@@ -53,7 +54,16 @@ public class UserHomeAreaActivity extends AppCompatActivity implements CompoundB
         transactionButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(UserHomeAreaActivity.this, "Transaction",Toast.LENGTH_SHORT).show();
+                Bundle extras =getIntent().getExtras();
+                String user_id;
+                if (extras != null) {
+                    user_id = extras.getString("user_id");
+                    Intent intent = new Intent(UserHomeAreaActivity.this, TransactionMenuActivity.class);
+                    intent.putExtra("user_id", user_id);
+//                    System.out.println("user id ----->"+user_id);
+                    startActivity(intent);
+                    Toast.makeText(UserHomeAreaActivity.this, "Transaction", Toast.LENGTH_SHORT).show();
+                }
             }
         });
 
@@ -69,10 +79,16 @@ public class UserHomeAreaActivity extends AppCompatActivity implements CompoundB
         cardButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(UserHomeAreaActivity.this,ViewCardActivity.class);
-//                intent.putExtra("used_id",DashboardRequest.class);
-                startActivity(intent);
-                Toast.makeText(UserHomeAreaActivity.this, "card",Toast.LENGTH_SHORT).show();
+                Bundle extras =getIntent().getExtras();
+                String user_id;
+                if (extras != null){
+                    user_id = extras.getString("user_id");
+                    Intent intent = new Intent(UserHomeAreaActivity.this,ViewCardActivity.class);
+                    intent.putExtra("user_id",user_id);
+//                    System.out.println("user id ----->"+user_id);
+                    startActivity(intent);
+                    Toast.makeText(UserHomeAreaActivity.this, "card",Toast.LENGTH_SHORT).show();
+                }
             }
         });
 
@@ -83,6 +99,7 @@ public class UserHomeAreaActivity extends AppCompatActivity implements CompoundB
                 Toast.makeText(UserHomeAreaActivity.this, "setting",Toast.LENGTH_SHORT).show();
             }
         });
+
     }
 
     private void dashboardInformation(final String user_id) {

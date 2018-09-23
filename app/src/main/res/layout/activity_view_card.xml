@@ -27,25 +27,34 @@
             app:cardBackgroundColor="#A3E4D7"
             app:layout_constraintTop_toTopOf="@+id/view5" android:layout_marginTop="8dp"
             app:layout_constraintVertical_bias="0.327" android:id="@+id/cardView">
+        <TextView
+                android:text="Card"
+                android:layout_width="100dp"
+                android:layout_height="44dp"
+                android:id="@+id/viewCard"
+                android:textStyle="bold|italic" android:textAllCaps="false"
+                android:textSize="24sp" app:fontFamily="serif" android:textColor="#1A5276"
+                tools:layout_editor_absoluteY="326dp" tools:layout_editor_absoluteX="37dp"
+                android:layout_gravity="bottom"/>
         <ImageView
                 android:layout_width="80dp"
-                android:layout_height="87dp"
+                android:layout_height="74dp"
                 android:layout_gravity="left|center"
-                android:id="@+id/imageView2" app:srcCompat="@drawable/ic_action_name"/>
+                android:id="@+id/cardImageView" app:srcCompat="@drawable/onlinebankcard"/>
         <TextView
                 android:text="User Name"
                 android:layout_width="239dp"
-                android:layout_height="38dp" android:id="@+id/textView4"
+                android:layout_height="38dp" android:id="@+id/viewFullName"
                 android:layout_gravity="right"/>
         <TextView
                 android:text="A/C Balance"
                 android:layout_width="239dp"
-                android:layout_height="38dp" android:id="@+id/textView3"
+                android:layout_height="38dp" android:id="@+id/viewAccountBalance"
                 android:layout_gravity="right|center"/>
         <TextView
                 android:text="Expair Date"
                 android:layout_width="239dp"
-                android:layout_height="38dp" android:id="@+id/textView5"
+                android:layout_height="38dp" android:id="@+id/viewExpairDate"
                 android:layout_gravity="bottom|right"/>
     </android.support.v7.widget.CardView>
     <TextView

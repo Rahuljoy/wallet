@@ -1,7 +1,6 @@
 package com.example.rahul.wallet;
 
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -88,27 +87,26 @@ try{
 
         @Override
         public void onResponse(Call<LoginObject> call, Response<LoginObject> response) {
-
             if (response.isSuccessful()){
                 LoginObject loginObject = response.body();
                    if (loginObject.getUser_id()!=null){
                        if (loginObject.getUser_active()!=null){
-//
-//                           Boolean isFirstRun = getSharedPreferences("PREFERENCE", MODE_PRIVATE)
-//                                   .getBoolean("isFirstRun", true);
-//                           if (isFirstRun){
-//                               Intent intent = new Intent(LoginActivity.this,AddCardActivity.class);
-////                               intent.putExtra("user_id",loginObject.getUser_id());
-//                               startActivity(intent);
-//
-//                               getSharedPreferences("PREFERENCE", MODE_PRIVATE).edit()
-//                                       .putBoolean("isFirstRun", false).apply();
-//                           }
 
-                           Intent intent = new Intent(LoginActivity.this,UserHomeAreaActivity.class);
-                           intent.putExtra("user_id",loginObject.getUser_id());
-                           startActivity(intent);
-                           Toast.makeText(LoginActivity.this,"Login Successfully",Toast.LENGTH_SHORT).show();
+        Boolean isFirstRun = getSharedPreferences("PREFERENCE", MODE_PRIVATE)
+                .getBoolean("runFastCardAdd", true);
+//        System.out.println("IsFirst ---> " + isFirstRun);
+        if (isFirstRun){
+            Intent intent = new Intent(LoginActivity.this,AddCardActivity.class);
+            intent.putExtra("user_id",loginObject.getUser_id());
+            startActivity(intent);
+            Toast.makeText(LoginActivity.this,"Please Add Your Card",Toast.LENGTH_SHORT).show();
+
+        } else  {
+            Intent intent = new Intent(LoginActivity.this,UserHomeAreaActivity.class);
+            intent.putExtra("user_id",loginObject.getUser_id());
+            startActivity(intent);
+            Toast.makeText(LoginActivity.this,"Login Successfully",Toast.LENGTH_SHORT).show();
+        }
                        } else {
                            Toast.makeText(LoginActivity.this,"user Not active",Toast.LENGTH_SHORT).show();
                        }
