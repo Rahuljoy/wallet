@@ -1,5 +1,6 @@
 package com.example.rahul.wallet;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -25,7 +26,10 @@ public class TransactionMenuActivity extends AppCompatActivity {
                 String user_id;
                 if (extras != null) {
                     user_id = extras.getString("user_id");
+                    Intent intent = new Intent(TransactionMenuActivity.this,AccountTransferActivity.class);
+                    intent.putExtra("user_id",user_id);
 //                    System.out.println("user id ----->"+user_id);
+                    startActivity(intent);
                     Toast.makeText(TransactionMenuActivity.this, "Transaction", Toast.LENGTH_SHORT).show();
                 }
             }

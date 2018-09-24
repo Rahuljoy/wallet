@@ -50,6 +50,12 @@
         </activity>
         <activity android:name=".TransactionMenuActivity">
         </activity>
+        <activity android:name=".AccountTransferActivity">
+        </activity>
+        <activity android:name=".AddContactActivity">
+        </activity>
+        <activity android:name=".MobileRechargeActivity">
+        </activity>
     </application>
 
 </manifest>

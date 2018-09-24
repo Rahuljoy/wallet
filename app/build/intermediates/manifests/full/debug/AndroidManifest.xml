@@ -58,6 +58,12 @@
         </activity>
         <activity android:name="com.example.rahul.wallet.TransactionMenuActivity" >
         </activity>
+        <activity android:name="com.example.rahul.wallet.AccountTransferActivity" >
+        </activity>
+        <activity android:name="com.example.rahul.wallet.AddContactActivity" >
+        </activity>
+        <activity android:name="com.example.rahul.wallet.MobileRechargeActivity" >
+        </activity>
     </application>
 
 </manifest>
