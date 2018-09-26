@@ -40,10 +40,18 @@ public class TransactionMenuActivity extends AppCompatActivity {
         mobileRecharge.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Bundle extras = getIntent().getExtras();
+                String user_id;
+                if (extras != null) {
+                    user_id = extras.getString("user_id");
+                    Intent intent = new Intent(TransactionMenuActivity.this,MobileRechargeActivity.class);
+                    intent.putExtra("user_id",user_id);
+//                    System.out.println("user id ----->"+user_id);
+                    startActivity(intent);
                 Toast.makeText(TransactionMenuActivity.this, "Mobile recharge", Toast.LENGTH_SHORT).show();
             }
+            }
         });
-
 
         onlinePayment = (Button) findViewById(R.id.onlinePayment);
         onlinePayment.setOnClickListener(new View.OnClickListener() {

@@ -71,7 +71,16 @@ public class UserHomeAreaActivity extends AppCompatActivity implements CompoundB
         StatementButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(UserHomeAreaActivity.this, "Statement",Toast.LENGTH_SHORT).show();
+                Bundle extras = getIntent().getExtras();
+                String user_id;
+                if (extras != null) {
+                    user_id = extras.getString("user_id");
+                    Intent intent = new Intent(UserHomeAreaActivity.this, StatementActivity.class);
+                    intent.putExtra("user_id", user_id);
+//                    System.out.println("user id ----->"+user_id);
+                    startActivity(intent);
+                    Toast.makeText(UserHomeAreaActivity.this, "Statement under process", Toast.LENGTH_SHORT).show();
+                }
             }
         });
 
@@ -96,7 +105,7 @@ public class UserHomeAreaActivity extends AppCompatActivity implements CompoundB
         settingButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(UserHomeAreaActivity.this, "setting",Toast.LENGTH_SHORT).show();
+                Toast.makeText(UserHomeAreaActivity.this, "setting coming Soon ",Toast.LENGTH_SHORT).show();
             }
         });
 
